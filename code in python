@@ -1,0 +1,15 @@
+def zerocount(L, K):
+    if K == 0:
+        return L
+    if K == L:
+        return 0
+    max_zeros = 0
+    if K > 0:
+        max_zeros = 1
+    return max_zeros
+def main():
+    L, K = map(int, input().split())
+    res = zerocount(L, K)
+    print(res)
+if __name__ == "__main__":
+    main()
